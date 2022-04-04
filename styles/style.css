@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --Very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--Very-light-gray);
+}
+
+main {
+    display: flex;
+    padding: 150px;
+}
+
+.first {
+    background-color: var(--Bright-orange);
+    padding: 50px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.second {
+    background-color: var(--Dark-cyan);
+    padding: 50px;
+}
+
+.third {
+    background-color: var(--Very-dark-cyan);
+    padding: 50px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.logo_img {
+    padding: 0px 0px 20px 0px;
+}
+
+.title {
+    color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.text {
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 20px 0px 20px 0px;
+    width: 210px;
+}
+
+.btn {
+    background-color: var(--Very-light-gray);
+    border-radius: 20px;
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+    padding: 10px;
+    width: 130px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 2px solid var(--Very-light-gray);
+    background-color: transparent;
+}
+
+.first .btn {
+    color: var(--Bright-orange);
+}
+
+.first .btn:hover {
+    color: var(--Very-light-gray);
+}
+
+.second .btn {
+    color: var(--Dark-cyan);
+}
+
+.second .btn:hover {
+    color: var(--Very-light-gray);
+}
+
+.third .btn {
+    color: var(--Very-dark-cyan);
+}
+
+.third .btn:hover {
+    color: var(--Very-light-gray);
+}
+
+@media screen and (max-width: 375px) {
+    
+}
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
