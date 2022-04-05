@@ -109,11 +109,29 @@ main {
 }
 
 @media screen and (max-width: 375px) {
-    
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px 50px 20px;
+    }
+
+    .first {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .third {
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .text {
+        width: 235px;
+    }
+
+    .btn {
+        margin: 10px 0px 0px 0px;
+    }
+
 }
-
-
-
 
 
 .attribution {
