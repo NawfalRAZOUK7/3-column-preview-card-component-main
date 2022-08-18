@@ -21,13 +21,14 @@ font-family: 'Lexend Deca', sans-serif; */
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     background-color: var(--Very-light-gray);
 }
 
 main {
     display: flex;
-    padding: 150px;
+    padding-top: 150px;
+    height: 64vh;
 }
 
 .first {
@@ -108,19 +109,36 @@ main {
     color: var(--Very-light-gray);
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 @media screen and (max-width: 375px) {
     main {
         display: flex;
         flex-direction: column;
-        padding: 50px 20px 50px 20px;
+        padding: 50px 20px;
+        height: auto;
     }
 
     .first {
         border-radius: 10px 10px 0px 0px;
+        height: 40vh;
+    }
+
+    .second {
+        height: 40vh;
     }
 
     .third {
         border-radius: 0px 0px 10px 10px;
+        height: 40vh;
     }
 
     .text {
@@ -131,14 +149,9 @@ main {
         margin: 10px 0px 0px 0px;
     }
 
+    .attribution {
+        margin-top: auto;
+    }
 }
 
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
